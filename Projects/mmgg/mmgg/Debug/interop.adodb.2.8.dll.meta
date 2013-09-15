@@ -1,0 +1,2377 @@
+Assembly Interop.ADODB.2.8, Version=2.8.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Struct ADODB.CursorTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.CursorTypeEnum adOpenUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.CursorTypeEnum adOpenForwardOnly = 0 : Public, Static, Literal, HasDefault
+    ADODB.CursorTypeEnum adOpenKeyset = 1 : Public, Static, Literal, HasDefault
+    ADODB.CursorTypeEnum adOpenDynamic = 2 : Public, Static, Literal, HasDefault
+    ADODB.CursorTypeEnum adOpenStatic = 3 : Public, Static, Literal, HasDefault
+Struct ADODB.CursorOptionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.CursorOptionEnum adHoldRecords = 256 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adMovePrevious = 512 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adAddNew = 16778240 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adDelete = 16779264 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adUpdate = 16809984 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adBookmark = 8192 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adApproxPosition = 16384 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adUpdateBatch = 65536 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adResync = 131072 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adNotify = 262144 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adFind = 524288 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adSeek = 4194304 : Public, Static, Literal, HasDefault
+    ADODB.CursorOptionEnum adIndex = 8388608 : Public, Static, Literal, HasDefault
+Struct ADODB.LockTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.LockTypeEnum adLockUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.LockTypeEnum adLockReadOnly = 1 : Public, Static, Literal, HasDefault
+    ADODB.LockTypeEnum adLockPessimistic = 2 : Public, Static, Literal, HasDefault
+    ADODB.LockTypeEnum adLockOptimistic = 3 : Public, Static, Literal, HasDefault
+    ADODB.LockTypeEnum adLockBatchOptimistic = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.ExecuteOptionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ExecuteOptionEnum adOptionUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.ExecuteOptionEnum adAsyncExecute = 16 : Public, Static, Literal, HasDefault
+    ADODB.ExecuteOptionEnum adAsyncFetch = 32 : Public, Static, Literal, HasDefault
+    ADODB.ExecuteOptionEnum adAsyncFetchNonBlocking = 64 : Public, Static, Literal, HasDefault
+    ADODB.ExecuteOptionEnum adExecuteNoRecords = 128 : Public, Static, Literal, HasDefault
+    ADODB.ExecuteOptionEnum adExecuteStream = 1024 : Public, Static, Literal, HasDefault
+    ADODB.ExecuteOptionEnum adExecuteRecord = 2048 : Public, Static, Literal, HasDefault
+Struct ADODB.ConnectOptionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ConnectOptionEnum adConnectUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.ConnectOptionEnum adAsyncConnect = 16 : Public, Static, Literal, HasDefault
+Struct ADODB.ObjectStateEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ObjectStateEnum adStateClosed = 0 : Public, Static, Literal, HasDefault
+    ADODB.ObjectStateEnum adStateOpen = 1 : Public, Static, Literal, HasDefault
+    ADODB.ObjectStateEnum adStateConnecting = 2 : Public, Static, Literal, HasDefault
+    ADODB.ObjectStateEnum adStateExecuting = 4 : Public, Static, Literal, HasDefault
+    ADODB.ObjectStateEnum adStateFetching = 8 : Public, Static, Literal, HasDefault
+Struct ADODB.CursorLocationEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.CursorLocationEnum adUseNone = 1 : Public, Static, Literal, HasDefault
+    ADODB.CursorLocationEnum adUseServer = 2 : Public, Static, Literal, HasDefault
+    ADODB.CursorLocationEnum adUseClient = 3 : Public, Static, Literal, HasDefault
+    ADODB.CursorLocationEnum adUseClientBatch = 3 : Public, Static, Literal, HasDefault
+Struct ADODB.DataTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.DataTypeEnum adEmpty = 0 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adTinyInt = 16 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adSmallInt = 2 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adInteger = 3 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adBigInt = 20 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adUnsignedTinyInt = 17 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adUnsignedSmallInt = 18 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adUnsignedInt = 19 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adUnsignedBigInt = 21 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adSingle = 4 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adDouble = 5 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adCurrency = 6 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adDecimal = 14 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adNumeric = 131 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adBoolean = 11 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adError = 10 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adUserDefined = 132 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adVariant = 12 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adIDispatch = 9 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adIUnknown = 13 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adGUID = 72 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adDate = 7 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adDBDate = 133 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adDBTime = 134 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adDBTimeStamp = 135 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adBSTR = 8 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adChar = 129 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adVarChar = 200 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adLongVarChar = 201 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adWChar = 130 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adVarWChar = 202 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adLongVarWChar = 203 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adBinary = 128 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adVarBinary = 204 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adLongVarBinary = 205 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adChapter = 136 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adFileTime = 64 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adPropVariant = 138 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adVarNumeric = 139 : Public, Static, Literal, HasDefault
+    ADODB.DataTypeEnum adArray = 8192 : Public, Static, Literal, HasDefault
+Struct ADODB.FieldAttributeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.FieldAttributeEnum adFldUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldMayDefer = 2 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldUpdatable = 4 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldUnknownUpdatable = 8 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldFixed = 16 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldIsNullable = 32 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldMayBeNull = 64 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldLong = 128 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldRowID = 256 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldRowVersion = 512 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldCacheDeferred = 4096 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldIsChapter = 8192 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldNegativeScale = 16384 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldKeyColumn = 32768 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldIsRowURL = 65536 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldIsDefaultStream = 131072 : Public, Static, Literal, HasDefault
+    ADODB.FieldAttributeEnum adFldIsCollection = 262144 : Public, Static, Literal, HasDefault
+Struct ADODB.EditModeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.EditModeEnum adEditNone = 0 : Public, Static, Literal, HasDefault
+    ADODB.EditModeEnum adEditInProgress = 1 : Public, Static, Literal, HasDefault
+    ADODB.EditModeEnum adEditAdd = 2 : Public, Static, Literal, HasDefault
+    ADODB.EditModeEnum adEditDelete = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.RecordStatusEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.RecordStatusEnum adRecOK = 0 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecNew = 1 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecModified = 2 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecDeleted = 4 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecUnmodified = 8 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecInvalid = 16 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecMultipleChanges = 64 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecPendingChanges = 128 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecCanceled = 256 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecCantRelease = 1024 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecConcurrencyViolation = 2048 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecIntegrityViolation = 4096 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecMaxChangesExceeded = 8192 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecObjectOpen = 16384 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecOutOfMemory = 32768 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecPermissionDenied = 65536 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecSchemaViolation = 131072 : Public, Static, Literal, HasDefault
+    ADODB.RecordStatusEnum adRecDBDeleted = 262144 : Public, Static, Literal, HasDefault
+Struct ADODB.GetRowsOptionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.GetRowsOptionEnum adGetRowsRest = -1 : Public, Static, Literal, HasDefault
+Struct ADODB.PositionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.PositionEnum adPosUnknown = -1 : Public, Static, Literal, HasDefault
+    ADODB.PositionEnum adPosBOF = -2 : Public, Static, Literal, HasDefault
+    ADODB.PositionEnum adPosEOF = -3 : Public, Static, Literal, HasDefault
+Struct ADODB.PositionEnum_Param: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.PositionEnum_Param adPosUnknown = -1 : Public, Static, Literal, HasDefault
+    ADODB.PositionEnum_Param adPosBOF = -2 : Public, Static, Literal, HasDefault
+    ADODB.PositionEnum_Param adPosEOF = -3 : Public, Static, Literal, HasDefault
+Struct ADODB.BookmarkEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.BookmarkEnum adBookmarkCurrent = 0 : Public, Static, Literal, HasDefault
+    ADODB.BookmarkEnum adBookmarkFirst = 1 : Public, Static, Literal, HasDefault
+    ADODB.BookmarkEnum adBookmarkLast = 2 : Public, Static, Literal, HasDefault
+Struct ADODB.MarshalOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.MarshalOptionsEnum adMarshalAll = 0 : Public, Static, Literal, HasDefault
+    ADODB.MarshalOptionsEnum adMarshalModifiedOnly = 1 : Public, Static, Literal, HasDefault
+Struct ADODB.AffectEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.AffectEnum adAffectCurrent = 1 : Public, Static, Literal, HasDefault
+    ADODB.AffectEnum adAffectGroup = 2 : Public, Static, Literal, HasDefault
+    ADODB.AffectEnum adAffectAll = 3 : Public, Static, Literal, HasDefault
+    ADODB.AffectEnum adAffectAllChapters = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.ResyncEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ResyncEnum adResyncUnderlyingValues = 1 : Public, Static, Literal, HasDefault
+    ADODB.ResyncEnum adResyncAllValues = 2 : Public, Static, Literal, HasDefault
+Struct ADODB.CompareEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.CompareEnum adCompareLessThan = 0 : Public, Static, Literal, HasDefault
+    ADODB.CompareEnum adCompareEqual = 1 : Public, Static, Literal, HasDefault
+    ADODB.CompareEnum adCompareGreaterThan = 2 : Public, Static, Literal, HasDefault
+    ADODB.CompareEnum adCompareNotEqual = 3 : Public, Static, Literal, HasDefault
+    ADODB.CompareEnum adCompareNotComparable = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.FilterGroupEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.FilterGroupEnum adFilterNone = 0 : Public, Static, Literal, HasDefault
+    ADODB.FilterGroupEnum adFilterPendingRecords = 1 : Public, Static, Literal, HasDefault
+    ADODB.FilterGroupEnum adFilterAffectedRecords = 2 : Public, Static, Literal, HasDefault
+    ADODB.FilterGroupEnum adFilterFetchedRecords = 3 : Public, Static, Literal, HasDefault
+    ADODB.FilterGroupEnum adFilterPredicate = 4 : Public, Static, Literal, HasDefault
+    ADODB.FilterGroupEnum adFilterConflictingRecords = 5 : Public, Static, Literal, HasDefault
+Struct ADODB.SearchDirectionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.SearchDirectionEnum adSearchForward = 1 : Public, Static, Literal, HasDefault
+    ADODB.SearchDirectionEnum adSearchBackward = -1 : Public, Static, Literal, HasDefault
+Struct ADODB.SearchDirection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.SearchDirection adSearchForward = 1 : Public, Static, Literal, HasDefault
+    ADODB.SearchDirection adSearchBackward = -1 : Public, Static, Literal, HasDefault
+Struct ADODB.PersistFormatEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.PersistFormatEnum adPersistADTG = 0 : Public, Static, Literal, HasDefault
+    ADODB.PersistFormatEnum adPersistXML = 1 : Public, Static, Literal, HasDefault
+Struct ADODB.StringFormatEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.StringFormatEnum adClipString = 2 : Public, Static, Literal, HasDefault
+Struct ADODB.ConnectPromptEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ConnectPromptEnum adPromptAlways = 1 : Public, Static, Literal, HasDefault
+    ADODB.ConnectPromptEnum adPromptComplete = 2 : Public, Static, Literal, HasDefault
+    ADODB.ConnectPromptEnum adPromptCompleteRequired = 3 : Public, Static, Literal, HasDefault
+    ADODB.ConnectPromptEnum adPromptNever = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.ConnectModeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ConnectModeEnum adModeUnknown = 0 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeRead = 1 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeWrite = 2 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeReadWrite = 3 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeShareDenyRead = 4 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeShareDenyWrite = 8 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeShareExclusive = 12 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeShareDenyNone = 16 : Public, Static, Literal, HasDefault
+    ADODB.ConnectModeEnum adModeRecursive = 4194304 : Public, Static, Literal, HasDefault
+Struct ADODB.RecordCreateOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.RecordCreateOptionsEnum adCreateCollection = 8192 : Public, Static, Literal, HasDefault
+    ADODB.RecordCreateOptionsEnum adCreateStructDoc = -2147483648 : Public, Static, Literal, HasDefault
+    ADODB.RecordCreateOptionsEnum adCreateNonCollection = 0 : Public, Static, Literal, HasDefault
+    ADODB.RecordCreateOptionsEnum adOpenIfExists = 33554432 : Public, Static, Literal, HasDefault
+    ADODB.RecordCreateOptionsEnum adCreateOverwrite = 67108864 : Public, Static, Literal, HasDefault
+    ADODB.RecordCreateOptionsEnum adFailIfNotExists = -1 : Public, Static, Literal, HasDefault
+Struct ADODB.RecordOpenOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.RecordOpenOptionsEnum adOpenRecordUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.RecordOpenOptionsEnum adOpenSource = 8388608 : Public, Static, Literal, HasDefault
+    ADODB.RecordOpenOptionsEnum adOpenOutput = 8388608 : Public, Static, Literal, HasDefault
+    ADODB.RecordOpenOptionsEnum adOpenAsync = 4096 : Public, Static, Literal, HasDefault
+    ADODB.RecordOpenOptionsEnum adDelayFetchStream = 16384 : Public, Static, Literal, HasDefault
+    ADODB.RecordOpenOptionsEnum adDelayFetchFields = 32768 : Public, Static, Literal, HasDefault
+    ADODB.RecordOpenOptionsEnum adOpenExecuteCommand = 65536 : Public, Static, Literal, HasDefault
+Struct ADODB.IsolationLevelEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.IsolationLevelEnum adXactUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactChaos = 16 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactReadUncommitted = 256 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactBrowse = 256 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactCursorStability = 4096 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactReadCommitted = 4096 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactRepeatableRead = 65536 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactSerializable = 1048576 : Public, Static, Literal, HasDefault
+    ADODB.IsolationLevelEnum adXactIsolated = 1048576 : Public, Static, Literal, HasDefault
+Struct ADODB.XactAttributeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.XactAttributeEnum adXactCommitRetaining = 131072 : Public, Static, Literal, HasDefault
+    ADODB.XactAttributeEnum adXactAbortRetaining = 262144 : Public, Static, Literal, HasDefault
+    ADODB.XactAttributeEnum adXactAsyncPhaseOne = 524288 : Public, Static, Literal, HasDefault
+    ADODB.XactAttributeEnum adXactSyncPhaseOne = 1048576 : Public, Static, Literal, HasDefault
+Struct ADODB.PropertyAttributesEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.PropertyAttributesEnum adPropNotSupported = 0 : Public, Static, Literal, HasDefault
+    ADODB.PropertyAttributesEnum adPropRequired = 1 : Public, Static, Literal, HasDefault
+    ADODB.PropertyAttributesEnum adPropOptional = 2 : Public, Static, Literal, HasDefault
+    ADODB.PropertyAttributesEnum adPropRead = 512 : Public, Static, Literal, HasDefault
+    ADODB.PropertyAttributesEnum adPropWrite = 1024 : Public, Static, Literal, HasDefault
+Struct ADODB.ErrorValueEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ErrorValueEnum adErrProviderFailed = 3000 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrInvalidArgument = 3001 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrOpeningFile = 3002 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrReadFile = 3003 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrWriteFile = 3004 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrNoCurrentRecord = 3021 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrIllegalOperation = 3219 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrCantChangeProvider = 3220 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrInTransaction = 3246 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrFeatureNotAvailable = 3251 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrItemNotFound = 3265 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrObjectInCollection = 3367 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrObjectNotSet = 3420 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrDataConversion = 3421 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrObjectClosed = 3704 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrObjectOpen = 3705 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrProviderNotFound = 3706 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrBoundToCommand = 3707 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrInvalidParamInfo = 3708 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrInvalidConnection = 3709 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrNotReentrant = 3710 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrStillExecuting = 3711 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrOperationCancelled = 3712 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrStillConnecting = 3713 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrInvalidTransaction = 3714 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrNotExecuting = 3715 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrUnsafeOperation = 3716 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adwrnSecurityDialog = 3717 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adwrnSecurityDialogHeader = 3718 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrIntegrityViolation = 3719 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPermissionDenied = 3720 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrDataOverflow = 3721 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrSchemaViolation = 3722 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrSignMismatch = 3723 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrCantConvertvalue = 3724 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrCantCreate = 3725 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrColumnNotOnThisRow = 3726 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrURLDoesNotExist = 3727 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrTreePermissionDenied = 3728 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrInvalidURL = 3729 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrResourceLocked = 3730 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrResourceExists = 3731 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrCannotComplete = 3732 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrVolumeNotFound = 3733 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrOutOfSpace = 3734 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrResourceOutOfScope = 3735 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrUnavailable = 3736 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrURLNamedRowDoesNotExist = 3737 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrDelResOutOfScope = 3738 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropInvalidColumn = 3739 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropInvalidOption = 3740 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropInvalidValue = 3741 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropConflicting = 3742 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropNotAllSettable = 3743 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropNotSet = 3744 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropNotSettable = 3745 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrPropNotSupported = 3746 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrCatalogNotSet = 3747 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrCantChangeConnection = 3748 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrFieldsUpdateFailed = 3749 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrDenyNotSupported = 3750 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrDenyTypeNotSupported = 3751 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrProviderNotSpecified = 3753 : Public, Static, Literal, HasDefault
+    ADODB.ErrorValueEnum adErrConnectionStringTooLong = 3754 : Public, Static, Literal, HasDefault
+Struct ADODB.ParameterAttributesEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ParameterAttributesEnum adParamSigned = 16 : Public, Static, Literal, HasDefault
+    ADODB.ParameterAttributesEnum adParamNullable = 64 : Public, Static, Literal, HasDefault
+    ADODB.ParameterAttributesEnum adParamLong = 128 : Public, Static, Literal, HasDefault
+Struct ADODB.ParameterDirectionEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ParameterDirectionEnum adParamUnknown = 0 : Public, Static, Literal, HasDefault
+    ADODB.ParameterDirectionEnum adParamInput = 1 : Public, Static, Literal, HasDefault
+    ADODB.ParameterDirectionEnum adParamOutput = 2 : Public, Static, Literal, HasDefault
+    ADODB.ParameterDirectionEnum adParamInputOutput = 3 : Public, Static, Literal, HasDefault
+    ADODB.ParameterDirectionEnum adParamReturnValue = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.CommandTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.CommandTypeEnum adCmdUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.CommandTypeEnum adCmdUnknown = 8 : Public, Static, Literal, HasDefault
+    ADODB.CommandTypeEnum adCmdText = 1 : Public, Static, Literal, HasDefault
+    ADODB.CommandTypeEnum adCmdTable = 2 : Public, Static, Literal, HasDefault
+    ADODB.CommandTypeEnum adCmdStoredProc = 4 : Public, Static, Literal, HasDefault
+    ADODB.CommandTypeEnum adCmdFile = 256 : Public, Static, Literal, HasDefault
+    ADODB.CommandTypeEnum adCmdTableDirect = 512 : Public, Static, Literal, HasDefault
+Struct ADODB.EventStatusEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.EventStatusEnum adStatusOK = 1 : Public, Static, Literal, HasDefault
+    ADODB.EventStatusEnum adStatusErrorsOccurred = 2 : Public, Static, Literal, HasDefault
+    ADODB.EventStatusEnum adStatusCantDeny = 3 : Public, Static, Literal, HasDefault
+    ADODB.EventStatusEnum adStatusCancel = 4 : Public, Static, Literal, HasDefault
+    ADODB.EventStatusEnum adStatusUnwantedEvent = 5 : Public, Static, Literal, HasDefault
+Struct ADODB.EventReasonEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.EventReasonEnum adRsnAddNew = 1 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnDelete = 2 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnUpdate = 3 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnUndoUpdate = 4 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnUndoAddNew = 5 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnUndoDelete = 6 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnRequery = 7 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnResynch = 8 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnClose = 9 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnMove = 10 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnFirstChange = 11 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnMoveFirst = 12 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnMoveNext = 13 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnMovePrevious = 14 : Public, Static, Literal, HasDefault
+    ADODB.EventReasonEnum adRsnMoveLast = 15 : Public, Static, Literal, HasDefault
+Struct ADODB.SchemaEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.SchemaEnum adSchemaProviderSpecific = -1 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaAsserts = 0 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaCatalogs = 1 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaCharacterSets = 2 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaCollations = 3 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaColumns = 4 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaCheckConstraints = 5 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaConstraintColumnUsage = 6 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaConstraintTableUsage = 7 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaKeyColumnUsage = 8 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaReferentialContraints = 9 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaReferentialConstraints = 9 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaTableConstraints = 10 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaColumnsDomainUsage = 11 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaIndexes = 12 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaColumnPrivileges = 13 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaTablePrivileges = 14 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaUsagePrivileges = 15 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaProcedures = 16 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaSchemata = 17 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaSQLLanguages = 18 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaStatistics = 19 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaTables = 20 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaTranslations = 21 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaProviderTypes = 22 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaViews = 23 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaViewColumnUsage = 24 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaViewTableUsage = 25 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaProcedureParameters = 26 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaForeignKeys = 27 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaPrimaryKeys = 28 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaProcedureColumns = 29 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaDBInfoKeywords = 30 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaDBInfoLiterals = 31 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaCubes = 32 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaDimensions = 33 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaHierarchies = 34 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaLevels = 35 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaMeasures = 36 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaProperties = 37 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaMembers = 38 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaTrustees = 39 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaFunctions = 40 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaActions = 41 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaCommands = 42 : Public, Static, Literal, HasDefault
+    ADODB.SchemaEnum adSchemaSets = 43 : Public, Static, Literal, HasDefault
+Struct ADODB.FieldStatusEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.FieldStatusEnum adFieldOK = 0 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldCantConvertValue = 2 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldIsNull = 3 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldTruncated = 4 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldSignMismatch = 5 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldDataOverflow = 6 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldCantCreate = 7 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldUnavailable = 8 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldPermissionDenied = 9 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldIntegrityViolation = 10 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldSchemaViolation = 11 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldBadStatus = 12 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldDefault = 13 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldIgnore = 15 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldDoesNotExist = 16 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldInvalidURL = 17 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldResourceLocked = 18 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldResourceExists = 19 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldCannotComplete = 20 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldVolumeNotFound = 21 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldOutOfSpace = 22 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldCannotDeleteSource = 23 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldReadOnly = 24 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldResourceOutOfScope = 25 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldAlreadyExists = 26 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldPendingInsert = 65536 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldPendingDelete = 131072 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldPendingChange = 262144 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldPendingUnknown = 524288 : Public, Static, Literal, HasDefault
+    ADODB.FieldStatusEnum adFieldPendingUnknownDelete = 1048576 : Public, Static, Literal, HasDefault
+Struct ADODB.SeekEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.SeekEnum adSeekFirstEQ = 1 : Public, Static, Literal, HasDefault
+    ADODB.SeekEnum adSeekLastEQ = 2 : Public, Static, Literal, HasDefault
+    ADODB.SeekEnum adSeekAfterEQ = 4 : Public, Static, Literal, HasDefault
+    ADODB.SeekEnum adSeekAfter = 8 : Public, Static, Literal, HasDefault
+    ADODB.SeekEnum adSeekBeforeEQ = 16 : Public, Static, Literal, HasDefault
+    ADODB.SeekEnum adSeekBefore = 32 : Public, Static, Literal, HasDefault
+Struct ADODB.ADCPROP_UPDATECRITERIA_ENUM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ADCPROP_UPDATECRITERIA_ENUM adCriteriaKey = 0 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATECRITERIA_ENUM adCriteriaAllCols = 1 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATECRITERIA_ENUM adCriteriaUpdCols = 2 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATECRITERIA_ENUM adCriteriaTimeStamp = 3 : Public, Static, Literal, HasDefault
+Struct ADODB.ADCPROP_ASYNCTHREADPRIORITY_ENUM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ADCPROP_ASYNCTHREADPRIORITY_ENUM adPriorityLowest = 1 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_ASYNCTHREADPRIORITY_ENUM adPriorityBelowNormal = 2 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_ASYNCTHREADPRIORITY_ENUM adPriorityNormal = 3 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_ASYNCTHREADPRIORITY_ENUM adPriorityAboveNormal = 4 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_ASYNCTHREADPRIORITY_ENUM adPriorityHighest = 5 : Public, Static, Literal, HasDefault
+Struct ADODB.ADCPROP_AUTORECALC_ENUM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ADCPROP_AUTORECALC_ENUM adRecalcUpFront = 0 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_AUTORECALC_ENUM adRecalcAlways = 1 : Public, Static, Literal, HasDefault
+Struct ADODB.ADCPROP_UPDATERESYNC_ENUM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.ADCPROP_UPDATERESYNC_ENUM adResyncNone = 0 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATERESYNC_ENUM adResyncAutoIncrement = 1 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATERESYNC_ENUM adResyncConflicts = 2 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATERESYNC_ENUM adResyncUpdates = 4 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATERESYNC_ENUM adResyncInserts = 8 : Public, Static, Literal, HasDefault
+    ADODB.ADCPROP_UPDATERESYNC_ENUM adResyncAll = 15 : Public, Static, Literal, HasDefault
+Struct ADODB.MoveRecordOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.MoveRecordOptionsEnum adMoveUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.MoveRecordOptionsEnum adMoveOverWrite = 1 : Public, Static, Literal, HasDefault
+    ADODB.MoveRecordOptionsEnum adMoveDontUpdateLinks = 2 : Public, Static, Literal, HasDefault
+    ADODB.MoveRecordOptionsEnum adMoveAllowEmulation = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.CopyRecordOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.CopyRecordOptionsEnum adCopyUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.CopyRecordOptionsEnum adCopyOverWrite = 1 : Public, Static, Literal, HasDefault
+    ADODB.CopyRecordOptionsEnum adCopyAllowEmulation = 4 : Public, Static, Literal, HasDefault
+    ADODB.CopyRecordOptionsEnum adCopyNonRecursive = 2 : Public, Static, Literal, HasDefault
+Struct ADODB.StreamTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.StreamTypeEnum adTypeBinary = 1 : Public, Static, Literal, HasDefault
+    ADODB.StreamTypeEnum adTypeText = 2 : Public, Static, Literal, HasDefault
+Struct ADODB.LineSeparatorEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.LineSeparatorEnum adLF = 10 : Public, Static, Literal, HasDefault
+    ADODB.LineSeparatorEnum adCR = 13 : Public, Static, Literal, HasDefault
+    ADODB.LineSeparatorEnum adCRLF = -1 : Public, Static, Literal, HasDefault
+Struct ADODB.StreamOpenOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.StreamOpenOptionsEnum adOpenStreamUnspecified = -1 : Public, Static, Literal, HasDefault
+    ADODB.StreamOpenOptionsEnum adOpenStreamAsync = 1 : Public, Static, Literal, HasDefault
+    ADODB.StreamOpenOptionsEnum adOpenStreamFromRecord = 4 : Public, Static, Literal, HasDefault
+Struct ADODB.StreamWriteEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.StreamWriteEnum adWriteChar = 0 : Public, Static, Literal, HasDefault
+    ADODB.StreamWriteEnum adWriteLine = 1 : Public, Static, Literal, HasDefault
+    ADODB.StreamWriteEnum stWriteChar = 0 : Public, Static, Literal, HasDefault
+    ADODB.StreamWriteEnum stWriteLine = 1 : Public, Static, Literal, HasDefault
+Struct ADODB.SaveOptionsEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.SaveOptionsEnum adSaveCreateNotExist = 1 : Public, Static, Literal, HasDefault
+    ADODB.SaveOptionsEnum adSaveCreateOverWrite = 2 : Public, Static, Literal, HasDefault
+Struct ADODB.FieldEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.FieldEnum adDefaultStream = -1 : Public, Static, Literal, HasDefault
+    ADODB.FieldEnum adRecordURL = -2 : Public, Static, Literal, HasDefault
+Struct ADODB.StreamReadEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.StreamReadEnum adReadAll = -1 : Public, Static, Literal, HasDefault
+    ADODB.StreamReadEnum adReadLine = -2 : Public, Static, Literal, HasDefault
+Struct ADODB.RecordTypeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ADODB.RecordTypeEnum adSimpleRecord = 0 : Public, Static, Literal, HasDefault
+    ADODB.RecordTypeEnum adCollectionRecord = 1 : Public, Static, Literal, HasDefault
+    ADODB.RecordTypeEnum adStructDoc = 2 : Public, Static, Literal, HasDefault
+Interface ADODB._Collection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB._DynaCollection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Append(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB._ADO: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Properties: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ADODB.Property Item [System.Object] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Property: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object Value 'get set' : 
+    System.String Name 'get ' : 
+    ADODB.DataTypeEnum Type 'get ' : 
+    Int32 Attributes 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Error: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Number 'get ' : 
+    System.String Source 'get ' : 
+    System.String Description 'get ' : 
+    System.String HelpFile 'get ' : 
+    Int32 HelpContext 'get ' : 
+    System.String SQLState 'get ' : 
+    Int32 NativeError 'get ' : 
+  Methods:
+    get_Number(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Description(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HelpFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HelpContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SQLState(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NativeError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Errors: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ADODB.Error Item [System.Object] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Clear(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Command15: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.Connection ActiveConnection 'get set' : 
+    System.String CommandText 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Boolean Prepared 'get set' : 
+    ADODB.Parameters Parameters 'get ' : 
+    ADODB.CommandTypeEnum CommandType 'get set' : 
+    System.String Name 'get set' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandText(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Prepared(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Prepared(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Execute(Object&(Out, Optional, HasFieldMarshal), Object&(In, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateParameter(String(In, Optional, HasDefault, HasFieldMarshal), DataTypeEnum(In, Optional, HasDefault), ParameterDirectionEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Parameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandType(CommandTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Name(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB._Connection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Connection15
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.String ConnectionString 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Int32 ConnectionTimeout 'get set' : 
+    System.String Version 'get ' : 
+    ADODB.Errors Errors 'get ' : 
+    System.String DefaultDatabase 'get set' : 
+    ADODB.IsolationLevelEnum IsolationLevel 'get set' : 
+    Int32 Attributes 'get set' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String Provider 'get set' : 
+    Int32 State 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Execute(String(In, HasFieldMarshal), Object&(Out, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CommitTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RollbackTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Errors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DefaultDatabase(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DefaultDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsolationLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_IsolationLevel(IsolationLevelEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Provider(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Provider(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OpenSchema(SchemaEnum(In), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Connection15: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.String ConnectionString 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Int32 ConnectionTimeout 'get set' : 
+    System.String Version 'get ' : 
+    ADODB.Errors Errors 'get ' : 
+    System.String DefaultDatabase 'get set' : 
+    ADODB.IsolationLevelEnum IsolationLevel 'get set' : 
+    Int32 Attributes 'get set' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String Provider 'get set' : 
+    Int32 State 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Execute(String(In, HasFieldMarshal), Object&(Out, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CommitTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RollbackTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Errors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DefaultDatabase(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DefaultDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsolationLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_IsolationLevel(IsolationLevelEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Provider(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Provider(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OpenSchema(SchemaEnum(In), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB._Recordset: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Recordset21
+    ADODB.Recordset20
+    ADODB.Recordset15
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.PositionEnum_Param AbsolutePosition 'get set' : 
+    System.Object ActiveConnection 'get set' : 
+    Boolean BOF 'get ' : 
+    System.Object Bookmark 'get set' : 
+    Int32 CacheSize 'get set' : 
+    ADODB.CursorTypeEnum CursorType 'get set' : 
+    Boolean EOF 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.LockTypeEnum LockType 'get set' : 
+    Int32 MaxRecords 'get set' : 
+    Int32 RecordCount 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.PositionEnum_Param AbsolutePage 'get set' : 
+    ADODB.EditModeEnum EditMode 'get ' : 
+    System.Object Filter 'get set' : 
+    Int32 PageCount 'get ' : 
+    Int32 PageSize 'get set' : 
+    System.String Sort 'get set' : 
+    Int32 Status 'get ' : 
+    Int32 State 'get ' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    System.Object Collect [System.Object] 'get set' : 
+    ADODB.MarshalOptionsEnum MarshalOptions 'get set' : 
+    System.Object DataSource 'get set' : 
+    System.Object ActiveCommand 'get ' : 
+    Boolean StayInSync 'get set' : 
+    System.String DataMember 'get set' : 
+    System.String Index 'get set' : 
+  Methods:
+    _xSave(String(In, Optional, HasDefault, HasFieldMarshal), PersistFormatEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ActiveCommand(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StayInSync(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StayInSync(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetString(StringFormatEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DataMember(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataMember(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CompareBookmarks(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Clone(LockTypeEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resync(AffectEnum(In, Optional, HasDefault), ResyncEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Seek(Object(In, HasFieldMarshal), SeekEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_Index(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Save(Object(In, Optional, HasFieldMarshal), PersistFormatEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveLast(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), CursorTypeEnum(In, Optional, HasDefault), LockTypeEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Requery(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    _xResync(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Update(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AbsolutePage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePage(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EditMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Filter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Filter(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PageSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Sort(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Sort(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    _xClone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpdateBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    NextRecordset(Object&(Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Supports(CursorOptionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Collect(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Collect(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarshalOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarshalOptions(MarshalOptionsEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Find(String(In, HasFieldMarshal), Int32(In, Optional, HasDefault), SearchDirectionEnum(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DataSource(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataSource(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AbsolutePosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePosition(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Bookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Bookmark(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CacheSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CacheSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CursorType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorType(CursorTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LockType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LockType(LockTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxRecords(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RecordCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddNew(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRows(Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Move(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveNext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MovePrevious(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveFirst(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Recordset21: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Recordset20
+    ADODB.Recordset15
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.PositionEnum_Param AbsolutePosition 'get set' : 
+    System.Object ActiveConnection 'get set' : 
+    Boolean BOF 'get ' : 
+    System.Object Bookmark 'get set' : 
+    Int32 CacheSize 'get set' : 
+    ADODB.CursorTypeEnum CursorType 'get set' : 
+    Boolean EOF 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.LockTypeEnum LockType 'get set' : 
+    Int32 MaxRecords 'get set' : 
+    Int32 RecordCount 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.PositionEnum_Param AbsolutePage 'get set' : 
+    ADODB.EditModeEnum EditMode 'get ' : 
+    System.Object Filter 'get set' : 
+    Int32 PageCount 'get ' : 
+    Int32 PageSize 'get set' : 
+    System.String Sort 'get set' : 
+    Int32 Status 'get ' : 
+    Int32 State 'get ' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    System.Object Collect [System.Object] 'get set' : 
+    ADODB.MarshalOptionsEnum MarshalOptions 'get set' : 
+    System.Object DataSource 'get set' : 
+    System.Object ActiveCommand 'get ' : 
+    Boolean StayInSync 'get set' : 
+    System.String DataMember 'get set' : 
+    System.String Index 'get set' : 
+  Methods:
+    _xSave(String(In, Optional, HasDefault, HasFieldMarshal), PersistFormatEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ActiveCommand(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StayInSync(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StayInSync(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetString(StringFormatEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DataMember(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataMember(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CompareBookmarks(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Clone(LockTypeEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resync(AffectEnum(In, Optional, HasDefault), ResyncEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Seek(Object(In, HasFieldMarshal), SeekEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_Index(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    MoveLast(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), CursorTypeEnum(In, Optional, HasDefault), LockTypeEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Requery(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    _xResync(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Update(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AbsolutePage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePage(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EditMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Filter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Filter(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PageSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Sort(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Sort(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    _xClone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpdateBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    NextRecordset(Object&(Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Supports(CursorOptionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Collect(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Collect(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarshalOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarshalOptions(MarshalOptionsEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Find(String(In, HasFieldMarshal), Int32(In, Optional, HasDefault), SearchDirectionEnum(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DataSource(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataSource(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AbsolutePosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePosition(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Bookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Bookmark(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CacheSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CacheSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CursorType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorType(CursorTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LockType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LockType(LockTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxRecords(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RecordCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddNew(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRows(Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Move(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveNext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MovePrevious(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveFirst(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Recordset20: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Recordset15
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.PositionEnum_Param AbsolutePosition 'get set' : 
+    System.Object ActiveConnection 'get set' : 
+    Boolean BOF 'get ' : 
+    System.Object Bookmark 'get set' : 
+    Int32 CacheSize 'get set' : 
+    ADODB.CursorTypeEnum CursorType 'get set' : 
+    Boolean EOF 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.LockTypeEnum LockType 'get set' : 
+    Int32 MaxRecords 'get set' : 
+    Int32 RecordCount 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.PositionEnum_Param AbsolutePage 'get set' : 
+    ADODB.EditModeEnum EditMode 'get ' : 
+    System.Object Filter 'get set' : 
+    Int32 PageCount 'get ' : 
+    Int32 PageSize 'get set' : 
+    System.String Sort 'get set' : 
+    Int32 Status 'get ' : 
+    Int32 State 'get ' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    System.Object Collect [System.Object] 'get set' : 
+    ADODB.MarshalOptionsEnum MarshalOptions 'get set' : 
+    System.Object DataSource 'get set' : 
+    System.Object ActiveCommand 'get ' : 
+    Boolean StayInSync 'get set' : 
+    System.String DataMember 'get set' : 
+  Methods:
+    _xSave(String(In, Optional, HasDefault, HasFieldMarshal), PersistFormatEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ActiveCommand(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StayInSync(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StayInSync(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetString(StringFormatEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DataMember(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataMember(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CompareBookmarks(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Clone(LockTypeEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resync(AffectEnum(In, Optional, HasDefault), ResyncEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveLast(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), CursorTypeEnum(In, Optional, HasDefault), LockTypeEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Requery(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    _xResync(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Update(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AbsolutePage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePage(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EditMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Filter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Filter(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PageSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Sort(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Sort(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    _xClone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpdateBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    NextRecordset(Object&(Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Supports(CursorOptionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Collect(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Collect(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarshalOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarshalOptions(MarshalOptionsEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Find(String(In, HasFieldMarshal), Int32(In, Optional, HasDefault), SearchDirectionEnum(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_DataSource(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataSource(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AbsolutePosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePosition(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Bookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Bookmark(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CacheSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CacheSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CursorType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorType(CursorTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LockType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LockType(LockTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxRecords(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RecordCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddNew(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRows(Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Move(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveNext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MovePrevious(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveFirst(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Recordset15: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.PositionEnum_Param AbsolutePosition 'get set' : 
+    System.Object ActiveConnection 'get set' : 
+    Boolean BOF 'get ' : 
+    System.Object Bookmark 'get set' : 
+    Int32 CacheSize 'get set' : 
+    ADODB.CursorTypeEnum CursorType 'get set' : 
+    Boolean EOF 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.LockTypeEnum LockType 'get set' : 
+    Int32 MaxRecords 'get set' : 
+    Int32 RecordCount 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.PositionEnum_Param AbsolutePage 'get set' : 
+    ADODB.EditModeEnum EditMode 'get ' : 
+    System.Object Filter 'get set' : 
+    Int32 PageCount 'get ' : 
+    Int32 PageSize 'get set' : 
+    System.String Sort 'get set' : 
+    Int32 Status 'get ' : 
+    Int32 State 'get ' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    System.Object Collect [System.Object] 'get set' : 
+    ADODB.MarshalOptionsEnum MarshalOptions 'get set' : 
+  Methods:
+    MoveLast(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), CursorTypeEnum(In, Optional, HasDefault), LockTypeEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Requery(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    _xResync(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Update(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AbsolutePage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePage(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EditMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Filter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Filter(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PageSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Sort(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Sort(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    _xClone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpdateBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    NextRecordset(Object&(Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Supports(CursorOptionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Collect(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Collect(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarshalOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarshalOptions(MarshalOptionsEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Find(String(In, HasFieldMarshal), Int32(In, Optional, HasDefault), SearchDirectionEnum(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AbsolutePosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AbsolutePosition(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Bookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Bookmark(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CacheSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CacheSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CursorType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CursorType(CursorTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LockType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LockType(LockTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxRecords(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RecordCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddNew(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRows(Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Move(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveNext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MovePrevious(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveFirst(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Fields: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Fields20
+    ADODB.Fields15
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ADODB.Field Item [System.Object] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    _Append(String(In, HasFieldMarshal), DataTypeEnum(In), Int32(In, Optional, HasDefault), FieldAttributeEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Append(String(In, HasFieldMarshal), DataTypeEnum(In), Int32(In, Optional, HasDefault), FieldAttributeEnum(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Update(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resync(ResyncEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Fields20: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Fields15
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ADODB.Field Item [System.Object] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    _Append(String(In, HasFieldMarshal), DataTypeEnum(In), Int32(In, Optional, HasDefault), FieldAttributeEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.Fields15: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ADODB.Field Item [System.Object] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Field: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Field20
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    Int32 ActualSize 'get ' : 
+    Int32 Attributes 'get set' : 
+    Int32 DefinedSize 'get set' : 
+    System.String Name 'get ' : 
+    ADODB.DataTypeEnum Type 'get set' : 
+    System.Object Value 'get set' : 
+    Byte Precision 'get set' : 
+    Byte NumericScale 'get set' : 
+    System.Object OriginalValue 'get ' : 
+    System.Object UnderlyingValue 'get ' : 
+    System.Object DataFormat 'get set' : 
+    Int32 Status 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActualSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DefinedSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Precision(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumericScale(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AppendChunk(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetChunk(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_OriginalValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UnderlyingValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataFormat(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Precision(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_NumericScale(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Type(DataTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DefinedSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Field20: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    Int32 ActualSize 'get ' : 
+    Int32 Attributes 'get set' : 
+    Int32 DefinedSize 'get set' : 
+    System.String Name 'get ' : 
+    ADODB.DataTypeEnum Type 'get set' : 
+    System.Object Value 'get set' : 
+    Byte Precision 'get set' : 
+    Byte NumericScale 'get set' : 
+    System.Object OriginalValue 'get ' : 
+    System.Object UnderlyingValue 'get ' : 
+    System.Object DataFormat 'get set' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActualSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DefinedSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Precision(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumericScale(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AppendChunk(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetChunk(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_OriginalValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UnderlyingValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataFormat(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Precision(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_NumericScale(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Type(DataTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DefinedSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB._Parameter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.String Name 'get set' : 
+    System.Object Value 'get set' : 
+    ADODB.DataTypeEnum Type 'get set' : 
+    ADODB.ParameterDirectionEnum Direction 'get set' : 
+    Byte Precision 'get set' : 
+    Byte NumericScale 'get set' : 
+    Int32 Size 'get set' : 
+    Int32 Attributes 'get set' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Name(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Type(DataTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Direction(ParameterDirectionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Direction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Precision(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Precision(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_NumericScale(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumericScale(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Size(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Size(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AppendChunk(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Parameters: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._DynaCollection
+    ADODB._Collection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ADODB.Parameter Item [System.Object] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Append(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Delete(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Command25: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Command15
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.Connection ActiveConnection 'get set' : 
+    System.String CommandText 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Boolean Prepared 'get set' : 
+    ADODB.Parameters Parameters 'get ' : 
+    ADODB.CommandTypeEnum CommandType 'get set' : 
+    System.String Name 'get set' : 
+    Int32 State 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandText(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Prepared(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Prepared(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Execute(Object&(Out, Optional, HasFieldMarshal), Object&(In, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateParameter(String(In, Optional, HasDefault, HasFieldMarshal), DataTypeEnum(In, Optional, HasDefault), ParameterDirectionEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Parameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandType(CommandTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Name(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB._Command: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.Command25
+    ADODB.Command15
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.Connection ActiveConnection 'get set' : 
+    System.String CommandText 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Boolean Prepared 'get set' : 
+    ADODB.Parameters Parameters 'get ' : 
+    ADODB.CommandTypeEnum CommandType 'get set' : 
+    System.String Name 'get set' : 
+    Int32 State 'get ' : 
+    System.Object CommandStream 'get set' : 
+    System.String Dialect 'get set' : 
+    Boolean NamedParameters 'get set' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandText(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Prepared(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Prepared(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Execute(Object&(Out, Optional, HasFieldMarshal), Object&(In, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateParameter(String(In, Optional, HasDefault, HasFieldMarshal), DataTypeEnum(In, Optional, HasDefault), ParameterDirectionEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Parameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CommandType(CommandTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Name(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_CommandStream(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CommandStream(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Dialect(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Dialect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_NamedParameters(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NamedParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.ConnectionEventsVt: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    InfoMessage(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginTransComplete(Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CommitTransComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RollbackTransComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillExecute(String&(In, Out, HasFieldMarshal), CursorTypeEnum&(In, Out), LockTypeEnum&(In, Out), Int32&(In, Out), EventStatusEnum&(In, Out), Command(In, HasFieldMarshal), Recordset(In, HasFieldMarshal), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExecuteComplete(Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Command(In, HasFieldMarshal), Recordset(In, HasFieldMarshal), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillConnect(String&(In, Out, HasFieldMarshal), String&(In, Out, HasFieldMarshal), String&(In, Out, HasFieldMarshal), Int32&(In, Out), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ConnectComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Disconnect(EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.RecordsetEventsVt: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    WillChangeField(Int32(In), Object(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FieldChangeComplete(Int32(In), Object(In, HasFieldMarshal), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillChangeRecord(EventReasonEnum(In), Int32(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RecordChangeComplete(EventReasonEnum(In), Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillChangeRecordset(EventReasonEnum(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RecordsetChangeComplete(EventReasonEnum(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillMove(EventReasonEnum(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveComplete(EventReasonEnum(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EndOfRecordset(Boolean&(In, Out), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FetchProgress(Int32(In), Int32(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FetchComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.ConnectionEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    InfoMessage(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginTransComplete(Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CommitTransComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RollbackTransComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillExecute(String&(In, Out, HasFieldMarshal), CursorTypeEnum&(In, Out), LockTypeEnum&(In, Out), Int32&(In, Out), EventStatusEnum&(In, Out), Command(In, HasFieldMarshal), Recordset(In, HasFieldMarshal), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExecuteComplete(Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Command(In, HasFieldMarshal), Recordset(In, HasFieldMarshal), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillConnect(String&(In, Out, HasFieldMarshal), String&(In, Out, HasFieldMarshal), String&(In, Out, HasFieldMarshal), Int32&(In, Out), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ConnectComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Disconnect(EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.RecordsetEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    WillChangeField(Int32(In), Object(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FieldChangeComplete(Int32(In), Object(In, HasFieldMarshal), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillChangeRecord(EventReasonEnum(In), Int32(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RecordChangeComplete(EventReasonEnum(In), Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillChangeRecordset(EventReasonEnum(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RecordsetChangeComplete(EventReasonEnum(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WillMove(EventReasonEnum(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveComplete(EventReasonEnum(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EndOfRecordset(Boolean&(In, Out), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FetchProgress(Int32(In), Int32(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FetchComplete(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.ADOConnectionConstruction15: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object DSO 'get ' : 
+    System.Object Session 'get ' : 
+  Methods:
+    get_DSO(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Session(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    WrapDSOandSession(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ADODB.ADOConnectionConstruction: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB.ADOConnectionConstruction15
+  Properties:
+    System.Object DSO 'get ' : 
+    System.Object Session 'get ' : 
+  Methods:
+    get_DSO(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Session(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    WrapDSOandSession(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ADODB.ConnectionClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ADODB._Connection
+    ADODB.Connection15
+    ADODB._ADO
+    ADODB.Connection
+    ADODB.ConnectionEvents_Event
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.String ConnectionString 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Int32 ConnectionTimeout 'get set' : 
+    System.String Version 'get ' : 
+    ADODB.Errors Errors 'get ' : 
+    System.String DefaultDatabase 'get set' : 
+    ADODB.IsolationLevelEnum IsolationLevel 'get set' : 
+    Int32 Attributes 'get set' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String Provider 'get set' : 
+    Int32 State 'get ' : 
+  Events:
+    ADODB.ConnectionEvents_InfoMessageEventHandler InfoMessage: 
+    ADODB.ConnectionEvents_BeginTransCompleteEventHandler BeginTransComplete: 
+    ADODB.ConnectionEvents_CommitTransCompleteEventHandler CommitTransComplete: 
+    ADODB.ConnectionEvents_RollbackTransCompleteEventHandler RollbackTransComplete: 
+    ADODB.ConnectionEvents_WillExecuteEventHandler WillExecute: 
+    ADODB.ConnectionEvents_ExecuteCompleteEventHandler ExecuteComplete: 
+    ADODB.ConnectionEvents_WillConnectEventHandler WillConnect: 
+    ADODB.ConnectionEvents_ConnectCompleteEventHandler ConnectComplete: 
+    ADODB.ConnectionEvents_DisconnectEventHandler Disconnect: 
+  Methods:
+    get_Provider(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Provider(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OpenSchema(SchemaEnum(In), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_InfoMessage(ConnectionEvents_InfoMessageEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_InfoMessage(ConnectionEvents_InfoMessageEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_BeginTransComplete(ConnectionEvents_BeginTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_BeginTransComplete(ConnectionEvents_BeginTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_CommitTransComplete(ConnectionEvents_CommitTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_CommitTransComplete(ConnectionEvents_CommitTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_RollbackTransComplete(ConnectionEvents_RollbackTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_RollbackTransComplete(ConnectionEvents_RollbackTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_WillExecute(ConnectionEvents_WillExecuteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_WillExecute(ConnectionEvents_WillExecuteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_ExecuteComplete(ConnectionEvents_ExecuteCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_ExecuteComplete(ConnectionEvents_ExecuteCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_WillConnect(ConnectionEvents_WillConnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_WillConnect(ConnectionEvents_WillConnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_ConnectComplete(ConnectionEvents_ConnectCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_ConnectComplete(ConnectionEvents_ConnectCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Disconnect(ConnectionEvents_DisconnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_Disconnect(ConnectionEvents_DisconnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConnectionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Execute(String(In, HasFieldMarshal), Object&(Out, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CommitTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RollbackTrans(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Open(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Errors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DefaultDatabase(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DefaultDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsolationLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IsolationLevel(IsolationLevelEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface ADODB.ConnectionEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    ADODB.ConnectionEvents_InfoMessageEventHandler InfoMessage: 
+    ADODB.ConnectionEvents_BeginTransCompleteEventHandler BeginTransComplete: 
+    ADODB.ConnectionEvents_CommitTransCompleteEventHandler CommitTransComplete: 
+    ADODB.ConnectionEvents_RollbackTransCompleteEventHandler RollbackTransComplete: 
+    ADODB.ConnectionEvents_WillExecuteEventHandler WillExecute: 
+    ADODB.ConnectionEvents_ExecuteCompleteEventHandler ExecuteComplete: 
+    ADODB.ConnectionEvents_WillConnectEventHandler WillConnect: 
+    ADODB.ConnectionEvents_ConnectCompleteEventHandler ConnectComplete: 
+    ADODB.ConnectionEvents_DisconnectEventHandler Disconnect: 
+  Methods:
+    add_InfoMessage(ConnectionEvents_InfoMessageEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_InfoMessage(ConnectionEvents_InfoMessageEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_BeginTransComplete(ConnectionEvents_BeginTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_BeginTransComplete(ConnectionEvents_BeginTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_CommitTransComplete(ConnectionEvents_CommitTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_CommitTransComplete(ConnectionEvents_CommitTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_RollbackTransComplete(ConnectionEvents_RollbackTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_RollbackTransComplete(ConnectionEvents_RollbackTransCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_WillExecute(ConnectionEvents_WillExecuteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_WillExecute(ConnectionEvents_WillExecuteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_ExecuteComplete(ConnectionEvents_ExecuteCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_ExecuteComplete(ConnectionEvents_ExecuteCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_WillConnect(ConnectionEvents_WillConnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_WillConnect(ConnectionEvents_WillConnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_ConnectComplete(ConnectionEvents_ConnectCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_ConnectComplete(ConnectionEvents_ConnectCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_Disconnect(ConnectionEvents_DisconnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_Disconnect(ConnectionEvents_DisconnectEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ADODB.ConnectionEvents_InfoMessageEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_BeginTransCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_CommitTransCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_RollbackTransCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_WillExecuteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String&(In, Out, HasFieldMarshal), CursorTypeEnum&(In, Out), LockTypeEnum&(In, Out), Int32&(In, Out), EventStatusEnum&(In, Out), Command(In, HasFieldMarshal), Recordset(In, HasFieldMarshal), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_ExecuteCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Command(In, HasFieldMarshal), Recordset(In, HasFieldMarshal), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_WillConnectEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String&(In, Out, HasFieldMarshal), String&(In, Out, HasFieldMarshal), String&(In, Out, HasFieldMarshal), Int32&(In, Out), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_ConnectCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_DisconnectEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventStatusEnum&(In, Out), Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Interface ADODB.Connection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Connection
+    ADODB.Connection15
+    ADODB._ADO
+    ADODB.ConnectionEvents_Event
+Interface ADODB._Record: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.Object ActiveConnection 'get set' : 
+    ADODB.ObjectStateEnum State 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String ParentURL 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.RecordTypeEnum RecordType 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_ActiveConnection(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActiveConnection(Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ParentURL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    MoveRecord(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), MoveRecordOptionsEnum(In, Optional, HasDefault), Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CopyRecord(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), CopyRecordOptionsEnum(In, Optional, HasDefault), Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteRecord(String(In, Optional, HasDefault, HasFieldMarshal), Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), ConnectModeEnum(In, Optional, HasDefault), RecordCreateOptionsEnum(In, Optional, HasDefault), RecordOpenOptionsEnum(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RecordType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetChildren(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ADODB.RecordClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ADODB._Record
+    ADODB._ADO
+    ADODB.Record
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.Object ActiveConnection 'get set' : 
+    ADODB.ObjectStateEnum State 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String ParentURL 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.RecordTypeEnum RecordType 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    let_ActiveConnection(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActiveConnection(Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ParentURL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    MoveRecord(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), MoveRecordOptionsEnum(In, Optional, HasDefault), Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CopyRecord(String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), CopyRecordOptionsEnum(In, Optional, HasDefault), Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteRecord(String(In, Optional, HasDefault, HasFieldMarshal), Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), ConnectModeEnum(In, Optional, HasDefault), RecordCreateOptionsEnum(In, Optional, HasDefault), RecordOpenOptionsEnum(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecordType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetChildren(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ADODB.Record: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Record
+    ADODB._ADO
+Interface ADODB._Stream: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Size 'get ' : 
+    Boolean EOS 'get ' : 
+    Int32 Position 'get set' : 
+    ADODB.StreamTypeEnum Type 'get set' : 
+    ADODB.LineSeparatorEnum LineSeparator 'get set' : 
+    ADODB.ObjectStateEnum State 'get ' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String Charset 'get set' : 
+  Methods:
+    get_Size(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EOS(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Position(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Type(StreamTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LineSeparator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LineSeparator(LineSeparatorEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Charset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Charset(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Read(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(Object(In, Optional, HasFieldMarshal), ConnectModeEnum(In, Optional, HasDefault), StreamOpenOptionsEnum(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SkipLine(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Write(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetEOS(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CopyTo(Stream(In, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Flush(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveToFile(String(In, HasFieldMarshal), SaveOptionsEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadFromFile(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReadText(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteText(String(In, HasFieldMarshal), StreamWriteEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ADODB.StreamClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ADODB._Stream
+    ADODB.Stream
+  Properties:
+    Int32 Size 'get ' : 
+    Boolean EOS 'get ' : 
+    Int32 Position 'get set' : 
+    ADODB.StreamTypeEnum Type 'get set' : 
+    ADODB.LineSeparatorEnum LineSeparator 'get set' : 
+    ADODB.ObjectStateEnum State 'get ' : 
+    ADODB.ConnectModeEnum Mode 'get set' : 
+    System.String Charset 'get set' : 
+  Methods:
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Size(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EOS(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Position(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Type(StreamTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LineSeparator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LineSeparator(LineSeparatorEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Mode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Mode(ConnectModeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Charset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Charset(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Read(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Open(Object(In, Optional, HasFieldMarshal), ConnectModeEnum(In, Optional, HasDefault), StreamOpenOptionsEnum(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SkipLine(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Write(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetEOS(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(Stream(In, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Flush(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveToFile(String(In, HasFieldMarshal), SaveOptionsEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadFromFile(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadText(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WriteText(String(In, HasFieldMarshal), StreamWriteEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ADODB.Stream: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Stream
+Interface ADODB.ADORecordConstruction: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object Row 'get set' : 
+    System.Object ParentRow 'set' : 
+  Methods:
+    get_Row(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Row(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ParentRow(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.ADOStreamConstruction: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object Stream 'get set' : 
+  Methods:
+    get_Stream(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Stream(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.ADOCommandConstruction: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object OLEDBCommand 'get set' : 
+  Methods:
+    get_OLEDBCommand(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_OLEDBCommand(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class ADODB.CommandClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ADODB._Command
+    ADODB.Command25
+    ADODB.Command15
+    ADODB._ADO
+    ADODB.Command
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.Connection ActiveConnection 'get set' : 
+    System.String CommandText 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    Boolean Prepared 'get set' : 
+    ADODB.Parameters Parameters 'get ' : 
+    ADODB.CommandTypeEnum CommandType 'get set' : 
+    System.String Name 'get set' : 
+    Int32 State 'get ' : 
+    System.Object CommandStream 'get set' : 
+    System.String Dialect 'get set' : 
+    Boolean NamedParameters 'get set' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActiveConnection(Connection(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CommandText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CommandText(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CommandTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Prepared(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Prepared(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Execute(Object&(Out, Optional, HasFieldMarshal), Object&(In, Optional, HasFieldMarshal), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateParameter(String(In, Optional, HasDefault, HasFieldMarshal), DataTypeEnum(In, Optional, HasDefault), ParameterDirectionEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Parameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CommandType(CommandTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CommandType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Name(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_CommandStream(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CommandStream(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Dialect(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Dialect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_NamedParameters(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NamedParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface ADODB.Command: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Command
+    ADODB.Command25
+    ADODB.Command15
+    ADODB._ADO
+Class ADODB.RecordsetClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ADODB._Recordset
+    ADODB.Recordset21
+    ADODB.Recordset20
+    ADODB.Recordset15
+    ADODB._ADO
+    ADODB.Recordset
+    ADODB.RecordsetEvents_Event
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    ADODB.PositionEnum_Param AbsolutePosition 'get set' : 
+    System.Object ActiveConnection 'get set' : 
+    Boolean BOF 'get ' : 
+    System.Object Bookmark 'get set' : 
+    Int32 CacheSize 'get set' : 
+    ADODB.CursorTypeEnum CursorType 'get set' : 
+    Boolean EOF 'get ' : 
+    ADODB.Fields Fields 'get ' : 
+    ADODB.LockTypeEnum LockType 'get set' : 
+    Int32 MaxRecords 'get set' : 
+    Int32 RecordCount 'get ' : 
+    System.Object Source 'get set' : 
+    ADODB.PositionEnum_Param AbsolutePage 'get set' : 
+    ADODB.EditModeEnum EditMode 'get ' : 
+    System.Object Filter 'get set' : 
+    Int32 PageCount 'get ' : 
+    Int32 PageSize 'get set' : 
+    System.String Sort 'get set' : 
+    Int32 Status 'get ' : 
+    Int32 State 'get ' : 
+    ADODB.CursorLocationEnum CursorLocation 'get set' : 
+    System.Object Collect [System.Object] 'get set' : 
+    ADODB.MarshalOptionsEnum MarshalOptions 'get set' : 
+    System.Object DataSource 'get set' : 
+    System.Object ActiveCommand 'get ' : 
+    Boolean StayInSync 'get set' : 
+    System.String DataMember 'get set' : 
+    System.String Index 'get set' : 
+  Events:
+    ADODB.RecordsetEvents_WillChangeFieldEventHandler WillChangeField: 
+    ADODB.RecordsetEvents_FieldChangeCompleteEventHandler FieldChangeComplete: 
+    ADODB.RecordsetEvents_WillChangeRecordEventHandler WillChangeRecord: 
+    ADODB.RecordsetEvents_RecordChangeCompleteEventHandler RecordChangeComplete: 
+    ADODB.RecordsetEvents_WillChangeRecordsetEventHandler WillChangeRecordset: 
+    ADODB.RecordsetEvents_RecordsetChangeCompleteEventHandler RecordsetChangeComplete: 
+    ADODB.RecordsetEvents_WillMoveEventHandler WillMove: 
+    ADODB.RecordsetEvents_MoveCompleteEventHandler MoveComplete: 
+    ADODB.RecordsetEvents_EndOfRecordsetEventHandler EndOfRecordset: 
+    ADODB.RecordsetEvents_FetchProgressEventHandler FetchProgress: 
+    ADODB.RecordsetEvents_FetchCompleteEventHandler FetchComplete: 
+  Methods:
+    set_Index(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Save(Object(In, Optional, HasFieldMarshal), PersistFormatEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_WillChangeField(RecordsetEvents_WillChangeFieldEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_WillChangeField(RecordsetEvents_WillChangeFieldEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_FieldChangeComplete(RecordsetEvents_FieldChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_FieldChangeComplete(RecordsetEvents_FieldChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_WillChangeRecord(RecordsetEvents_WillChangeRecordEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_WillChangeRecord(RecordsetEvents_WillChangeRecordEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_RecordChangeComplete(RecordsetEvents_RecordChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_RecordChangeComplete(RecordsetEvents_RecordChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_WillChangeRecordset(RecordsetEvents_WillChangeRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_WillChangeRecordset(RecordsetEvents_WillChangeRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_RecordsetChangeComplete(RecordsetEvents_RecordsetChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_RecordsetChangeComplete(RecordsetEvents_RecordsetChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_WillMove(RecordsetEvents_WillMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_WillMove(RecordsetEvents_WillMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_MoveComplete(RecordsetEvents_MoveCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_MoveComplete(RecordsetEvents_MoveCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_EndOfRecordset(RecordsetEvents_EndOfRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_EndOfRecordset(RecordsetEvents_EndOfRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_FetchProgress(RecordsetEvents_FetchProgressEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_FetchProgress(RecordsetEvents_FetchProgressEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_FetchComplete(RecordsetEvents_FetchCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_FetchComplete(RecordsetEvents_FetchCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpdateBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CancelBatch(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_CursorLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CursorLocation(CursorLocationEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    NextRecordset(Object&(Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Supports(CursorOptionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Collect(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Collect(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MarshalOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MarshalOptions(MarshalOptionsEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Find(String(In, HasFieldMarshal), Int32(In, Optional, HasDefault), SearchDirectionEnum(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_DataSource(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataSource(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    _xSave(String(In, Optional, HasDefault, HasFieldMarshal), PersistFormatEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ActiveCommand(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StayInSync(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StayInSync(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetString(StringFormatEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_DataMember(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataMember(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CompareBookmarks(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Clone(LockTypeEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Resync(AffectEnum(In, Optional, HasDefault), ResyncEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Seek(Object(In, HasFieldMarshal), SeekEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Delete(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetRows(Int32(In, Optional, HasDefault), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Move(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MoveNext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MovePrevious(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MoveFirst(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MoveLast(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Open(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), CursorTypeEnum(In, Optional, HasDefault), LockTypeEnum(In, Optional, HasDefault), Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Requery(Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    _xResync(AffectEnum(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Update(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_AbsolutePage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AbsolutePage(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EditMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Filter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Filter(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PageSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PageSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Sort(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Sort(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    _xClone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AbsolutePosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AbsolutePosition(PositionEnum_Param(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    let_ActiveConnection(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActiveConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Bookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Bookmark(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CacheSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CacheSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CursorType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CursorType(CursorTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EOF(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Fields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LockType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LockType(LockTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxRecords(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecordCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Source(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    let_Source(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddNew(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CancelUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ADODB.RecordsetEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    ADODB.RecordsetEvents_WillChangeFieldEventHandler WillChangeField: 
+    ADODB.RecordsetEvents_FieldChangeCompleteEventHandler FieldChangeComplete: 
+    ADODB.RecordsetEvents_WillChangeRecordEventHandler WillChangeRecord: 
+    ADODB.RecordsetEvents_RecordChangeCompleteEventHandler RecordChangeComplete: 
+    ADODB.RecordsetEvents_WillChangeRecordsetEventHandler WillChangeRecordset: 
+    ADODB.RecordsetEvents_RecordsetChangeCompleteEventHandler RecordsetChangeComplete: 
+    ADODB.RecordsetEvents_WillMoveEventHandler WillMove: 
+    ADODB.RecordsetEvents_MoveCompleteEventHandler MoveComplete: 
+    ADODB.RecordsetEvents_EndOfRecordsetEventHandler EndOfRecordset: 
+    ADODB.RecordsetEvents_FetchProgressEventHandler FetchProgress: 
+    ADODB.RecordsetEvents_FetchCompleteEventHandler FetchComplete: 
+  Methods:
+    add_WillChangeField(RecordsetEvents_WillChangeFieldEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_WillChangeField(RecordsetEvents_WillChangeFieldEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_FieldChangeComplete(RecordsetEvents_FieldChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_FieldChangeComplete(RecordsetEvents_FieldChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_WillChangeRecord(RecordsetEvents_WillChangeRecordEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_WillChangeRecord(RecordsetEvents_WillChangeRecordEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_RecordChangeComplete(RecordsetEvents_RecordChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_RecordChangeComplete(RecordsetEvents_RecordChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_WillChangeRecordset(RecordsetEvents_WillChangeRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_WillChangeRecordset(RecordsetEvents_WillChangeRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_RecordsetChangeComplete(RecordsetEvents_RecordsetChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_RecordsetChangeComplete(RecordsetEvents_RecordsetChangeCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_WillMove(RecordsetEvents_WillMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_WillMove(RecordsetEvents_WillMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_MoveComplete(RecordsetEvents_MoveCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_MoveComplete(RecordsetEvents_MoveCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_EndOfRecordset(RecordsetEvents_EndOfRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_EndOfRecordset(RecordsetEvents_EndOfRecordsetEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_FetchProgress(RecordsetEvents_FetchProgressEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_FetchProgress(RecordsetEvents_FetchProgressEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_FetchComplete(RecordsetEvents_FetchCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_FetchComplete(RecordsetEvents_FetchCompleteEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ADODB.RecordsetEvents_WillChangeFieldEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In), Object(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_FieldChangeCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In), Object(In, HasFieldMarshal), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_WillChangeRecordEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventReasonEnum(In), Int32(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_RecordChangeCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventReasonEnum(In), Int32(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_WillChangeRecordsetEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventReasonEnum(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_RecordsetChangeCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventReasonEnum(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_WillMoveEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventReasonEnum(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_MoveCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(EventReasonEnum(In), Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_EndOfRecordsetEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Boolean&(In, Out), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_FetchProgressEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In), Int32(In), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class ADODB.RecordsetEvents_FetchCompleteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Error(In, HasFieldMarshal), EventStatusEnum&(In, Out), Recordset(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Interface ADODB.Recordset: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Recordset
+    ADODB.Recordset21
+    ADODB.Recordset20
+    ADODB.Recordset15
+    ADODB._ADO
+    ADODB.RecordsetEvents_Event
+Interface ADODB.ADORecordsetConstruction: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object Rowset 'get set' : 
+    Int32 Chapter 'get set' : 
+    System.Object RowPosition 'get set' : 
+  Methods:
+    get_Rowset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Rowset(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Chapter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Chapter(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RowPosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_RowPosition(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ADODB.Field15: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._ADO
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    Int32 ActualSize 'get ' : 
+    Int32 Attributes 'get ' : 
+    Int32 DefinedSize 'get ' : 
+    System.String Name 'get ' : 
+    ADODB.DataTypeEnum Type 'get ' : 
+    System.Object Value 'get set' : 
+    Byte Precision 'get ' : 
+    Byte NumericScale 'get ' : 
+    System.Object OriginalValue 'get ' : 
+    System.Object UnderlyingValue 'get ' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActualSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DefinedSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Precision(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumericScale(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AppendChunk(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetChunk(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_OriginalValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UnderlyingValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class ADODB.ParameterClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ADODB._Parameter
+    ADODB._ADO
+    ADODB.Parameter
+  Properties:
+    ADODB.Properties Properties 'get ' : 
+    System.String Name 'get set' : 
+    System.Object Value 'get set' : 
+    ADODB.DataTypeEnum Type 'get set' : 
+    ADODB.ParameterDirectionEnum Direction 'get set' : 
+    Byte Precision 'get set' : 
+    Byte NumericScale 'get set' : 
+    Int32 Size 'get set' : 
+    Int32 Attributes 'get set' : 
+  Methods:
+    get_Properties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Name(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Type(DataTypeEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Direction(ParameterDirectionEnum(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Direction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Precision(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Precision(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_NumericScale(Byte(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NumericScale(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Size(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Size(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AppendChunk(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Attributes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Attributes(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface ADODB.Parameter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ADODB._Parameter
+    ADODB._ADO
+Class ADODB.RecordsetEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    ADODB.RecordsetEvents
+  Fields:
+    ADODB.RecordsetEvents_WillChangeFieldEventHandler m_WillChangeFieldDelegate : Public
+    ADODB.RecordsetEvents_FieldChangeCompleteEventHandler m_FieldChangeCompleteDelegate : Public
+    ADODB.RecordsetEvents_WillChangeRecordEventHandler m_WillChangeRecordDelegate : Public
+    ADODB.RecordsetEvents_RecordChangeCompleteEventHandler m_RecordChangeCompleteDelegate : Public
+    ADODB.RecordsetEvents_WillChangeRecordsetEventHandler m_WillChangeRecordsetDelegate : Public
+    ADODB.RecordsetEvents_RecordsetChangeCompleteEventHandler m_RecordsetChangeCompleteDelegate : Public
+    ADODB.RecordsetEvents_WillMoveEventHandler m_WillMoveDelegate : Public
+    ADODB.RecordsetEvents_MoveCompleteEventHandler m_MoveCompleteDelegate : Public
+    ADODB.RecordsetEvents_EndOfRecordsetEventHandler m_EndOfRecordsetDelegate : Public
+    ADODB.RecordsetEvents_FetchProgressEventHandler m_FetchProgressDelegate : Public
+    ADODB.RecordsetEvents_FetchCompleteEventHandler m_FetchCompleteDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    WillChangeField(Int32, Object, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    FieldChangeComplete(Int32, Object, Error, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    WillChangeRecord(EventReasonEnum, Int32, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    RecordChangeComplete(EventReasonEnum, Int32, Error, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    WillChangeRecordset(EventReasonEnum, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    RecordsetChangeComplete(EventReasonEnum, Error, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    WillMove(EventReasonEnum, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    MoveComplete(EventReasonEnum, Error, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    EndOfRecordset(Boolean&, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    FetchProgress(Int32, Int32, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+    FetchComplete(Error, EventStatusEnum&, Recordset): PrivateScope, Public, Virtual
+Class ADODB.ConnectionEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    ADODB.ConnectionEvents
+  Fields:
+    ADODB.ConnectionEvents_InfoMessageEventHandler m_InfoMessageDelegate : Public
+    ADODB.ConnectionEvents_BeginTransCompleteEventHandler m_BeginTransCompleteDelegate : Public
+    ADODB.ConnectionEvents_CommitTransCompleteEventHandler m_CommitTransCompleteDelegate : Public
+    ADODB.ConnectionEvents_RollbackTransCompleteEventHandler m_RollbackTransCompleteDelegate : Public
+    ADODB.ConnectionEvents_WillExecuteEventHandler m_WillExecuteDelegate : Public
+    ADODB.ConnectionEvents_ExecuteCompleteEventHandler m_ExecuteCompleteDelegate : Public
+    ADODB.ConnectionEvents_WillConnectEventHandler m_WillConnectDelegate : Public
+    ADODB.ConnectionEvents_ConnectCompleteEventHandler m_ConnectCompleteDelegate : Public
+    ADODB.ConnectionEvents_DisconnectEventHandler m_DisconnectDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    InfoMessage(Error, EventStatusEnum&, Connection): PrivateScope, Public, Virtual
+    BeginTransComplete(Int32, Error, EventStatusEnum&, Connection): PrivateScope, Public, Virtual
+    CommitTransComplete(Error, EventStatusEnum&, Connection): PrivateScope, Public, Virtual
+    RollbackTransComplete(Error, EventStatusEnum&, Connection): PrivateScope, Public, Virtual
+    WillExecute(String&, CursorTypeEnum&, LockTypeEnum&, Int32&, EventStatusEnum&, Command, Recordset, Connection): PrivateScope, Public, Virtual
+    ExecuteComplete(Int32, Error, EventStatusEnum&, Command, Recordset, Connection): PrivateScope, Public, Virtual
+    WillConnect(String&, String&, String&, Int32&, EventStatusEnum&, Connection): PrivateScope, Public, Virtual
+    ConnectComplete(Error, EventStatusEnum&, Connection): PrivateScope, Public, Virtual
+    Disconnect(EventStatusEnum&, Connection): PrivateScope, Public, Virtual

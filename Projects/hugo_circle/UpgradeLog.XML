@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="hugo_circle">
+</Property><Property Name="Solution File" Value="D:\Users\admin\Documents\Visual Studio 2008\Projects\hugo_circle\hugo_circle.sln">
+</Property><Property Name="Date" Value="Thursday, May 03, 2012">
+</Property><Property Name="Time" Value="11:44 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="hugo_circle.sln" Description="File successfully backed up as D:\Users\admin\Documents\Visual Studio 2008\Projects\hugo_circle\Backup\hugo_circle.sln">
+</Event><Event ErrorLevel="0" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="Converting project file 'D:\Users\admin\Documents\Visual Studio 2008\Projects\hugo_circle\hugo_circle\hugo_circle.vcproj'.">
+</Event><Event ErrorLevel="1" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="All user macros reported below for configuration 'Debug|Win32' are used before their definition, which can cause undesirable build results; this is not supported in this release. You can resolve this by changing the inclusion order of the consuming property sheets and making sure they come after the property sheets defining the user macros.">
+</Event><Event ErrorLevel="1" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="MSB4211: C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets (36,5); The property &quot;TargetPath&quot; is being set to a value for the first time, but it was already consumed at &quot;C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Platforms\Win32\ImportAfter\debugger_gpu_ref.default.props (7,3)&quot;.">
+</Event><Event ErrorLevel="1" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="All user macros reported below for configuration 'Release|Win32' are used before their definition, which can cause undesirable build results; this is not supported in this release. You can resolve this by changing the inclusion order of the consuming property sheets and making sure they come after the property sheets defining the user macros.">
+</Event><Event ErrorLevel="1" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="MSB4211: C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets (36,5); The property &quot;TargetPath&quot; is being set to a value for the first time, but it was already consumed at &quot;C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Platforms\Win32\ImportAfter\debugger_gpu_ref.default.props (7,3)&quot;.">
+</Event><Event ErrorLevel="0" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="Done converting to new project file 'D:\Users\admin\Documents\Visual Studio 2008\Projects\hugo_circle\hugo_circle\hugo_circle.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="hugo_circle" Source="hugo_circle\hugo_circle.vcxproj" Description="">
+</Event><Event ErrorLevel="0" Project="" Source="hugo_circle.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="hugo_circle.sln" Description="Converted">
+</Event></UpgradeLog>
